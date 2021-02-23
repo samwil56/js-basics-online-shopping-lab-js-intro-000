@@ -39,7 +39,9 @@ function viewCart() {
       state = state + ite +' at $' + price
       if (i<cart.length-2) {state = state + ', '}
       else if (i<cart.length-1) {state = state + ', and '}
+      else {state= state + '.'}
     }
+    return state
   }
 }
 
