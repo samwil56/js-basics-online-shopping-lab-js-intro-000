@@ -63,8 +63,8 @@ function removeFromCart(item) {
     items.push(ite)
   }
   var n = items.includes(item)
-  if (n==False) {return 'That item is not in your cart.'}
-  if (n==True) {
+  if (n=='False') {return 'That item is not in your cart.'}
+  if (n=='True') {
     var ind = items.indexOf(item)
     cart.splice(ind,1)
     return cart
