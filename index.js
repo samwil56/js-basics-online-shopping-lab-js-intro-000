@@ -24,6 +24,13 @@ function viewCart() {
     var pri = cart[0]['itemPrice']
     return `In your cart, you have ${ite} at $${pri}.`
   }
+  else if (cart[2]==undefined) {
+    var pri1 = cart[0]['itemPrice']
+    var ite1 = cart[0]['itemName']
+    var pri2 = cart[1]['itemPrice']
+    var ite2 = cart[1]['itemName']
+    return `In your cart, you have ${ite1} at $${pri1}, and ${ite2} at $${pri2}.`
+  }
 }
 
 function total() {
