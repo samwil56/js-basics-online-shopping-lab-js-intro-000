@@ -20,8 +20,8 @@ function addToCart(item) {
 function viewCart() {
   if (cart[0]== undefined) {return 'Your shopping cart is empty.'}
   else if (cart[1]==undefined) {
-    var ite = cart[0][itemName]
-    var pri = cart[0][itemPrice]
+    var ite = cart[0]['itemName']
+    var pri = cart[0]['itemPrice']
     return `In your cart, you have ${ite} at $${pri}.`
   }
 }
