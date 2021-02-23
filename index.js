@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   var ite = item
   var price = math.floor(math.random(100))
-  var newarr = {itemName:`${item}`, itemPrice: `${price}`
+  var newarr = {itemName:`${item}`, itemPrice: `${price}`}
   cart.push(newarr)
   return
 }
