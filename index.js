@@ -31,6 +31,16 @@ function viewCart() {
     var ite2 = cart[1]['itemName']
     return `In your cart, you have ${ite1} at $${pri1}, and ${ite2} at $${pri2}.`
   }
+  else {
+    var state = `In your cart, you have `
+    for (i = 0;i<cart.length;i++) {
+      var pri = cart[i]['itemPrice']
+      var ite = cart[i]['itemName']
+      state = state + ite +' at $' + price
+      if (i<cart.length-2) {state = state + ', '}
+      else if (i<cart.length-1) {state = state + ', and '}
+    }
+  }
 }
 
 function total() {
