@@ -37,7 +37,7 @@ function viewCart() {
       var i = i
       var pri = cart[i]['itemPrice']
       var ite = cart[i]['itemName']
-      state = state + ite +' at $' + price
+      state = state + ite +' at $' + pri
       if (i<cart.length-2) {state = state + ', '}
       else if (i<cart.length-1) {state = state + ', and '}
       else {state= state + '.'}
